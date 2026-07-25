@@ -1,0 +1,144 @@
+/*
+Theme Name: Consultio
+Theme URI: http://demo.casethemes.net/consultio/
+Author: Case-Themes
+Author URI: https://themeforest.net/user/case-themes/portfolio/
+Description: Consultio is the Perfect Consulting Finane & Business WordPress Theme. Consultio is best suited for corporate website like Consultioial Advisor, Accountant, Consulting Firms, insurance, loan, tax help, Investment firm etc. This is a business theme that is help full for online presence for Corporate Business and Consultioial Firms.   
+Version: 2.9.6
+License: ThemeForest
+License URI: https://themeforest.net/licenses
+Text Domain: consultio
+Tags: advisor, attorney, corporate accountant, consulting, consultant, finance, insurance, invest, investment, investor, mutual funds, pensions, retirement, saving, trading 
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+/* --- CUSTOM HOMEPAGE STYLES --- */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* 1. Hero Section */
+.hero-section {
+  position: relative;
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  overflow: hidden;
+}
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 0 5%;
+  max-width: 800px;
+}
+.slide-in-left {
+  animation: slideInLeft 1s ease-out forwards;
+}
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* 2. Quick Access Grid */
+.quick-access-section {
+  padding: 60px 0;
+  background: #f9f9f9;
+}
+.quick-access-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.qa-btn {
+  background: #fff;
+  padding: 25px;
+  text-align: center;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+.qa-btn:hover {
+  background: #0056b3;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+/* 3. Client List Section */
+.clients-section {
+  position: relative;
+  padding: 80px 0;
+  background-color: #fff;
+}
+.clients-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.08; /* Scales down opacity so text is visible */
+  z-index: 0;
+  pointer-events: none;
+}
+.clients-content {
+  position: relative;
+  z-index: 1;
+}
+.client-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  list-style: square inside;
+}
+
+/* 4. Certificates Carousel */
+.certificates-section {
+  padding: 80px 0;
+  background-size: cover;
+  background-position: center;
+}
+.cert-carousel {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.cert-img {
+  height: 120px;
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.4s ease;
+}
+.cert-img:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+}
